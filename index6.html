@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+
+    <style>
+        .box{
+            position: absolute;
+            width: 50vw;
+            height: 50vh;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left:0;
+
+
+        }
+        .box:nth-child(1){
+            right:auto;
+            top: auto;
+            background-color: orange;
+        }
+        .box:nth-child(2) {
+            left: auto;
+            top: auto;
+            background-color: deeppink;
+            position: absolute;
+        }
+
+        .box:nth-child(3){
+            right: auto;
+            bottom: auto;
+            background-color: red;
+
+        }
+        .box:nth-child(4){
+            left: auto;
+            bottom: auto;
+            background-color: green;
+            position: absolute;
+
+        }
+        .boxtwo{
+            position: absolute;
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left:0;
+            margin: auto;
+        }
+        .inner-element{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .inner-element2{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            border-radius: 50%;
+        }
+        .inner-element2:nth-child(1){
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: red;
+            margin: auto;
+        }
+        .half-cirlcle1{
+            width:100px;
+            height:100px;
+            background: white;
+            border-radius: 0 0 90px 0;
+            position: absolute;
+
+        }
+        .half-cirlcle1:nth-child(1){
+            top: -50px;
+            left: -50px;
+
+        }
+        .top-left{
+            width:100px;
+            height:100px;
+            background: white;
+            border-radius: 0 0  90px 0;
+            position: absolute;
+            top: -5px;
+            /*left: -5px;*/
+        }
+        .top-right{
+            width:100px;
+            height:100px;
+            background: white;
+            border-radius: 0 0 0 90px;
+            position: absolute;
+            top: -5px;
+            right: -5px;
+        }
+        .bottom-left{
+            width:100px;
+            height:100px;
+            background: white;
+            border-radius: 0 90px 0 0;
+            position: absolute;
+            bottom: -5px;
+            /*left: -5px;*/
+        }
+        .bottom-right{
+            width:100px;
+            height:100px;
+            background: white;
+            border-radius: 90px 0 0 0;
+            position: absolute;
+            bottom: -5px;
+            right: -5px;
+        }
+        .box3{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            background-color: red;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+<section>
+    <div class="box">
+        <span class="inner-element"></span>
+        <span class="bottom-left"></span>
+        <span class="bottom-right"></span>
+        <span class="box3"></span>
+
+
+
+    </div>
+    <div class="box">
+        <span class="inner-element"></span>
+        <span class="bottom-left"></span>
+        <span class="bottom-right"></span>
+        <span class="box3"></span>
+
+    </div>
+    <div class="box">
+        <span class="inner-element"></span>
+        <span class="top-left"></span>
+        <span class="top-right"></span>
+        <span class="half-cirlcle"></span>
+        <span class="box3"></span>
+
+    </div>
+    <div class="box">
+        <span class="inner-element"></span>
+        <span class="top-left"></span>
+        <span class="top-right"></span>
+        <span class="box3"></span>
+
+    </div>
+    <div class="boxtwo">
+        <span class="inner-element2"></span>
+
+    </div>
+
+</section>
+<section></section>
+<section></section>
+
+</body>
+</html>
